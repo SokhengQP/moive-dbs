@@ -26,10 +26,9 @@ export default function Header() {
      
      return (
           <>
-               
                <div className="absolute w-24 h-24 border blur-[60px] bg-red-500 top-44" />
                <div className="absolute" />
-               <div className="flex justify-between items-center mx-4 flex-shrink-0">
+               <div className="flex justify-between items-center mx-4 flex-shrink-0" data-aos="fade-down">
                     
                     {mypf.map(items =>
                          <Link to='/'>
@@ -39,7 +38,7 @@ export default function Header() {
 
                     
                     <div className="flex items-center gap-2">
-                         <div className="flex border rounded-md mx-4">
+                         <div className="flex border rounded-md mx-4" data-aos="fade-down">
                               {addCard.map((item) => { 
                                    const { title, icons, path } = item;
                                    return (
@@ -53,7 +52,7 @@ export default function Header() {
                               
                          </div>
                          
-                         <div className="flex">
+                         <div className="flex" data-aos="fade-up-right">
                               {links.map((items) => {
                                    const { id, title, path, icons } = items;
                                    return (

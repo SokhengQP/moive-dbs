@@ -12,17 +12,19 @@ export default function Home() {
      
      return (
           <>
-               <div>
+               <div className="flex flex-wrap justify-center" data-aos="fade-up-right">
                     {data.results && data.results.map((movie) => {
                          const url = 'https://image.tmdb.org/t/p/w500';
                          const { backdrop_path, id, original_title, release_date } = movie;
                          return (
                          
-                              <div key={id} className="inline-block mx-2 p-2">
+                              <div data-aos="fade-up-right" key={id} className="inline-block mx-2 my-4 overflow-hidden">
                                    <img loading="lazy" className="rounded-md aspect-video w-80" src={url + backdrop_path} alt="movie-pf" />
-                                   <div>{ id }</div>
-                                   <div className="">{ original_title }</div>
-                                   <div>{ release_date }</div>
+                                   <div className="px-4 py-1">
+                                        <div>{ id }</div>
+                                        <div className="text-[14px]">{ original_title }</div>
+                                        <div>{ release_date }</div>
+                                   </div>
                               </div>
                          )
                     })}

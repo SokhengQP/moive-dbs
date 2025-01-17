@@ -16,6 +16,7 @@ import MovieDetails from './Components/MovieDetails';
 import RootError from './RootError';
 import Home from './Components/Home'
 const routes = createBrowserRouter([
+  
   {
     path: '/',
     element: <MasterLayout />,
