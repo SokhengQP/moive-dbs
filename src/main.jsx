@@ -11,7 +11,7 @@ import AboutUs from './Components/AboutUs';
 import People from './Components/People';
 import ContactUs from './Components/ContactUs';
 import Cart from './Components/Cart';
-import LogIn from './Components/Login';
+import LogIn from './Components/LogIn';
 import MovieDetails from './Components/MovieDetails';
 import RootError from './RootError';
 import Home from './Components/Home'
